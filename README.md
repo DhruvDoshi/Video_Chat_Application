@@ -102,7 +102,7 @@ $ heroku git:remote -a thawing-inlet-61413
 set git remote heroku to https://git.heroku.com/thawing-inlet-61413.git
 ```
 
-### Changing your App name on Heroku <a name="changing_your_app_name_on_heroku"></a>
+#### Changing your App name on Heroku <a name="changing_your_app_name_on_heroku"></a>
 You can rename an app at any time with the ```heroku apps:rename command```. For example, to rename an app named “oldname” to “newname”, run the ```heroku apps:rename``` command from your app’s Git repository:
 ```
 $ heroku apps:rename newname
@@ -123,12 +123,11 @@ http://newname.herokuapp.com/ | git@herokuapp.com:newname.git
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/DhruvDoshi) - Idea & Initial work
+- [@DhruvDoshi](https://github.com/DhruvDoshi) - Idea & Initial work
 
 See also the list of [contributors](https://github.com/DhruvDoshi/multichat-dhruv/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
+- Inspired by Government news on Zoom hiding data
 - References
