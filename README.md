@@ -87,7 +87,6 @@ npm start
 $ heroku create
 Creating app... done, ⬢ thawing-inlet-61413
 https://thawing-inlet-61413.herokuapp.com/ | https://git.heroku.com/thawing-inlet-61413.git
-```
 
 You can use the ```git remote``` command to confirm that a remote named ```heroku``` has been set for your app:
 ```
@@ -117,6 +116,7 @@ You can also rename an app from outside of its associated Git repository by incl
 $ heroku apps:rename newname --app oldname
 http://newname.herokuapp.com/ | git@herokuapp.com:newname.git
 ```
+
 ## ⛏️ Built Using <a name = "heroku"></a>
 
 - [Heroku](https://www.heroku.com/) - SaaS hosting platform
