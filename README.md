@@ -26,7 +26,7 @@
 - [How it works](#working)
 - [Usage](#usage)
 - [Getting Started](#getting_started)
-- [Deploying your own bot](#deployment)
+- [Deploying your own platform](#deployment)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
@@ -42,7 +42,7 @@ The platform extracts the data with Webrtc Api and the it connects the users thr
 
 The app is designed to take only 2 users as the time and others will wait their way in the waiting room until the conversation is over.
 
-The entire bot is written in JavaScript
+The entire application is written in JavaScript
 
 ## 🎈 Usage <a name = "usage"></a>
 
