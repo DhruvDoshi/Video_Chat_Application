@@ -9,6 +9,7 @@
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/DhruvDoshi/multichat-dhruv.svg)](https://github.com/DhruvDoshi/multichat-dhruv/issues)
+[![HitCount](http://hits.dwyl.io/DhruvDoshi/multichat-dhruv.svg)](http://hits.dwyl.io/DhruvDoshi/multichat-dhruv)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/DhruvDoshi/multichat-dhruv.svg)](https://github.com/DhruvDoshi/multichat-dhruv/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
