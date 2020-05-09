@@ -76,14 +76,8 @@ Say what the step will be
 
 ```
 git clone https://github.com/DhruvDoshi/multichat-dhruv
-```
-```
 cd multichat-dhruv
-```
-```
 npm install
-```
-```
 npm start 
 ```
 
@@ -123,28 +117,6 @@ You can also rename an app from outside of its associated Git repository by incl
 $ heroku apps:rename newname --app oldname
 http://newname.herokuapp.com/ | git@herokuapp.com:newname.git
 ```
-
-**💡 Note:** When you rename an app, it immediately becomes available at the new corresponding ```herokuapp.com``` subdomain (```newname.herokuapp.com```) and unavailable at the old one (```oldname.herokuapp.com```).
-
-If you use the Heroku CLI to rename an app from inside it's associated Git repository, your local Heroku remote is updated automatically. However, other instances of the repository must update the remote’s details manually.
-
-You can run the following commands to update the remote’s details in other repository instances:
-```
-$ git remote rm heroku
-$ heroku git:remote -a newname
-```
-
-Replace ```newname``` with the new name of the app, as specified in the ```rename``` command.
-
-### Deploying code <a name="deploying_code"></a>
-To deploy your app to Heroku, you typically use the ```git push``` command to push the code from your local repository’s ```master``` branch to your ```heroku``` remote, like so:
-```
-$ git push heroku master
-Initializing repository, done.
-updating 'refs/heads/master'
-  ...
-```
-
 ## ⛏️ Built Using <a name = "heroku"></a>
 
 - [Heroku](https://www.heroku.com/) - SaaS hosting platform
