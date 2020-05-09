@@ -145,59 +145,6 @@ updating 'refs/heads/master'
   ...
 ```
 
-Code diffs, manual and auto deploys via GitHub are also possible. To use GitHub as a deployment method:
-```
-Heroku Dashboard > Select your App > Deploy > Deployment Method > Connect to GitHub > App connected to GitHub > Select your GitHub repo
-```
-
-Thereafter, you can deploy code from your GitHub repo. If you have a local Git repo (if you have cloned your main GitHub repo), you will have to push your code to GitHub by using:
-```
-$ git push origin master
-```
-
-#### Deploying from a branch besides master
-If you want to deploy code to Heroku from a non-```master``` branch of your local repository (for example, ```testbranch```), use the following syntax to ensure it is pushed to the remote’s ```master``` branch:
-```
-$ git push heroku testbranch:master
-```
-
-### After setting up repo on Heroku <a name="after_setting_up_repo_on_heroku"></a>
-Once you've got your repo set up on Heroku, there's two things you'll have to change:
-1. Can't use a prop (credentials) file for username / password anymore since it's untracked in your gitignore, so you'll have to set environmental variables.
-2. Heroku has an ephemeral File System, and you can't preserve generated files between runs (aka pickle caching isn't an option).
-
-To solve 1), you'll have to set environmental variables. You can set it like this from terminal:
-```
-# Set heroku config/env variables
-$ heroku config:set reddit_username=<your_reddit_username>
-$ heroku config:set reddit_password=<your_reddit_password>
-$ heroku config:set client_id=<your_client_id>
-$ heroku config:set client_secret=<your_client_secret>
-
-# Confirm they're set with this command
-$ heroku config
-```
-
-And programmatically retrieve it in your code like this:
-```
-# Retrieve heroku env variables
-reddit_username = os.environ['reddit_username']
-reddit_password = os.environ['reddit_password']
-client_id = os.environ['client_id']
-client_secret = os.environ['client_secret']
-```
-
-To solve 2), a temporary solution would be to save comments as soon as you reply to them. If a comment has been saved (use ```comment.saved``` to check), then don't reply to that comment. Else, reply to that comment and then save it. To save a comment, use:
-```
-comment.save()
-```
-
-This is a temporary solution because Reddit has a max cap of 1000 for the number of comments / posts you can save.
-
-A better solution would be to use a Database to store all the comment IDs. For this, you can use one of Heroku's many data storing / caching options. While most of these add-ons are free, they need you to verify yourself - by adding a credit card to your account.
-
-The Heroku Postgres add-on however, does not require you to verify yourself. Heroku Postgres is a reliable and powerful database based on PostgreSQL. We'll be using the Heroku Postgres as the database for our Bot.
-
 ## ⛏️ Built Using <a name = "heroku"></a>
 
 - [Heroku](https://www.heroku.com/) - SaaS hosting platform
