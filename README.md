@@ -198,16 +198,15 @@ A better solution would be to use a Database to store all the comment IDs. For t
 
 The Heroku Postgres add-on however, does not require you to verify yourself. Heroku Postgres is a reliable and powerful database based on PostgreSQL. We'll be using the Heroku Postgres as the database for our Bot.
 
-## ⛏️ Built Using <a name = "built_using"></a>
+## ⛏️ Built Using <a name = "heroku"></a>
 
-- [PRAW](https://praw.readthedocs.io/en/latest/) - Python Reddit API Wrapper
 - [Heroku](https://www.heroku.com/) - SaaS hosting platform
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [@kylelobo](https://github.com/DhruvDoshi) - Idea & Initial work
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/DhruvDoshi/multichat-dhruv/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
