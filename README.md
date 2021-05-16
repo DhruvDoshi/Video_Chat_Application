@@ -83,23 +83,6 @@ npm start
 
 ## 🚀 Deploying your own application <a name = "deployment"></a>
 
-$ heroku create
-Creating app... done, ⬢ thawing-inlet-61413
-https://thawing-inlet-61413.herokuapp.com/ | https://git.heroku.com/thawing-inlet-61413.git
-
-You can use the ```git remote``` command to confirm that a remote named ```heroku``` has been set for your app:
-```
-$ git remote -v
-heroku  https://git.heroku.com/thawing-inlet-61413.git (fetch)
-heroku  https://git.heroku.com/thawing-inlet-61413.git (push)
-```
-
-#### For an existing Heroku App
-If you have already created your Heroku app, you can easily add a remote to your local repository with the ```heroku git:remote``` command. All you need is your Heroku app’s name:
-```
-$ heroku git:remote -a thawing-inlet-61413
-set git remote heroku to https://git.heroku.com/thawing-inlet-61413.git
-```
 
 #### Changing your App name on Heroku <a name="changing_your_app_name_on_heroku"></a>
 You can rename an app at any time with the ```heroku apps:rename command```. For example, to rename an app named “oldname” to “newname”, run the ```heroku apps:rename``` command from your app’s Git repository:
